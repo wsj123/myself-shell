@@ -142,6 +142,7 @@ echo $lengthn
 array_name=(1 2 3 4 5)
 echo ${array_name[0]}
 运行结果:1
+```
 
 
 

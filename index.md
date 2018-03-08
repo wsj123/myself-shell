@@ -128,7 +128,7 @@ array_name[0]=value0
 array_name[1]=value1
 array_name[2]=value3
 
-数组长度:
+2.数组长度:
 length=${#array_name[@]}
 echo $length
 length=${#array_name[*]}
@@ -137,7 +137,7 @@ echo $length
 lengthn=${#array_name[0]}
 echo $lengthn
 
-获取元素第一个元素
+3.获取元素第一个元素
 #!/bin/sh
 array_name=(1 2 3 4 5)
 echo ${array_name[0]}

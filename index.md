@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Shell 教程
+### 第一个shell脚本
+```
+#!/bin/bash
+echo "Hello World !"
+#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。
+echo 命令用于向窗口输出文本。
+```
+### 运行 Shell 脚本有两种方法：
+1、作为可执行程序
 
-You can use the [editor on GitHub](https://github.com/wsj123/myself-shell/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+将上面的代码保存为 test.sh，并 cd 到相应目录：
+```
+chmod +x ./test.sh  #使脚本具有执行权限
+./test.sh  #执行脚本
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Shell 变量
+```
+your_name="runoob.com"
+除了显式地直接赋值，还可以用语句给变量赋值，如：
+for file in `ls /etc`
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wsj123/myself-shell/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 使用变量
